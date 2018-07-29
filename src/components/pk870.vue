@@ -124,7 +124,7 @@ export default {
   color: white;
   background-image: url('../assets/pk3wall.svg');
   background-size: 100% auto;
-  animation: 40s shift infinite;
+  animation: 60s shift infinite;
 }
 .p3photo {
   height: 50vh;
@@ -190,6 +190,6 @@ a {
 .brass img {
   height: 50vh;
   margin-bottom: 5vh;
-  animation: shiftinv 40s infinite;
+  animation: shiftinv 60s infinite;
 }
 </style>
