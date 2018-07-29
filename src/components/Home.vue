@@ -13,7 +13,7 @@
         <div class="morebutton">view interest check</div>
         </div>
         <div class="photowrap">
-        <img src="@/assets/pk87-small.jpg" class="productphoto"/>
+        <img src="@/assets/pk87-small.png" class="productphoto"/>
         </div>
       </div>
     </div>
