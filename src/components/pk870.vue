@@ -34,7 +34,7 @@ export default {
     filter: hue-rotate(0deg);
   }
   50% {
-    filter: hue-rotate(-45deg);
+    filter: hue-rotate(-360deg);
   }
 }
 @keyframes shiftinv {
@@ -42,7 +42,7 @@ export default {
     filter: hue-rotate(0deg);
   }
   50% {
-    filter: hue-rotate(45deg);
+    filter: hue-rotate(360deg);
   }
 }
 .top {
@@ -124,7 +124,7 @@ export default {
   color: white;
   background-image: url('../assets/pk3wall.svg');
   background-size: 100% auto;
-  animation: 25s shift infinite;
+  animation: 40s shift infinite;
 }
 .p3photo {
   height: 50vh;
@@ -190,6 +190,6 @@ a {
 .brass img {
   height: 50vh;
   margin-bottom: 5vh;
-  animation: shiftinv 25s infinite;
+  animation: shiftinv 40s infinite;
 }
 </style>
