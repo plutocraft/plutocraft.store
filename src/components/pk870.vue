@@ -10,6 +10,11 @@
   <img ref="p2photo" class="p2photo" src="@/assets/pk87_2.png"/>
   <div class="p2desc">precision machined aerospace-grade aluminum<br/>bead blasted, hand-polished, and PVD coated to a perfect finish<br/>brass weight for ultimate acoustics and stability</div>
 </div>
+<div class="p3">
+  <div class="superheader">painstakingly engineered illumination</div>
+  <img class="p3photo" src="@/assets/pk87_3.png"/>
+  <div class="p3desc">three programmable gradient diffusers<br/>per key individually addressable fast-refresh lighting<br/>more than 16m colors per point</div>
+</div>
 </div>
 </template>
 <script>
@@ -23,6 +28,14 @@ export default {
 }
 </script>
 <style scoped>
+@keyframes shift {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(-45deg);
+  }
+}
 .top {
   position: fixed;
   top: 0;
@@ -71,6 +84,15 @@ export default {
   padding: 1vh;
   line-height: 1.4;
 }
+.p3desc {
+  background:  linear-gradient(0.75turn,#864af8, #e165ff);
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2.5vh;
+  font-family: Circular;
+  padding: 1vh;
+  line-height: 1.4;
+}
 .p2 {
   height: 95vh;
   display: flex;
@@ -83,8 +105,28 @@ export default {
   background-color: white;
   background-blend-mode: difference;
 }
+.p3 {
+  height: 95vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url('../assets/box2.svg');
+  background-size: 2vh;
+  animation: 25s shift infinite;
+}
+.p3photo {
+  height: 50vh;
+  margin-bottom: 5vh;
+}
 .p2 .superheader {
   background: black;
+  padding: 0.5vh;
+}
+.p3 .superheader {
+  background:  linear-gradient(0.25turn,#864af8, #e165ff);
+  color: white;
   padding: 0.5vh;
 }
 .p1photo {
