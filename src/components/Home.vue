@@ -6,8 +6,7 @@
       <div class="product">
         <div class="name">
           <span>pk87.0
-            <div class="description">[k?]ustom TKL
-              <br/>marketing lol
+            <div class="description">custom TKL
             </div>
           </span>
         <router-link to="/pk87.0"><div class="morebutton">view interest check</div></router-link>
@@ -64,7 +63,7 @@ export default {
   width: 100vw;
   padding: 50px;
   box-sizing: border-box;
-  max-width: 880px;
+  max-width: 910px;
   color: black;
 }
 .product {
@@ -115,7 +114,7 @@ export default {
 .productphoto {
   height: 160px;
   animation: shift 25s infinite;
-  margin-left: 20px;
+  margin-left: 50px;
 }
 .photowrap {
   display: flex;
