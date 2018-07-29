@@ -12,9 +12,13 @@
 </div>
 <div class="p3">
   <div class="superheader">painstakingly engineered illumination</div>
-  <div class="brass"><img src="@/assets/pk87_3_2.png"/></div>
+  <img class="brass" src="@/assets/pk87_3_2.png"/>
   <img class="p3photo" src="@/assets/pk87_3.png"/>
   <div class="p3desc">three programmable gradient diffusers<br/>per key individually addressable fast-refresh lighting<br/>more than 16m colors per point</div>
+</div>
+<div class="p4">
+  <div class="superheader">8&deg; slant for optimal ergonomics</div>
+  <img class="p3photo" src="@/assets/slant.png"/>
 </div>
 </div>
 </template>
@@ -48,6 +52,7 @@ export default {
 .top {
   position: fixed;
   top: 0;
+  z-index: 10000;
   width: 100%;
   background: white;
   color: black;
@@ -126,6 +131,14 @@ export default {
   background-size: 100% auto;
   animation: 60s shift infinite;
 }
+.p4 {
+  height: 95vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
 .p3photo {
   height: 50vh;
   margin-bottom: 5vh;
@@ -185,11 +198,10 @@ a {
   color: inherit;
 }
 .brass {
-  position: absolute;
-}
-.brass img {
   height: 50vh;
   margin-bottom: 5vh;
+  position: absolute;
+  margin-top: -1.9vh;
   animation: shiftinv 60s infinite;
 }
 </style>
