@@ -58,7 +58,7 @@ export default {
   color: black;
 }
 .p1photo {
-  height: 40%;
+  height: 400px;
   margin-bottom: 40px;
   transition: filter 2s ease;
 }
