@@ -201,7 +201,7 @@ a {
   height: 50vh;
   margin-bottom: 5vh;
   position: absolute;
-  margin-top: -1.9vh;
+  margin-top: -2vh;
   animation: shiftinv 60s infinite;
 }
 </style>
