@@ -10,7 +10,7 @@
               <br/>marketing lol
             </div>
           </span>
-        <div class="morebutton">view interest check</div>
+        <router-link to="/pk87.0"><div class="morebutton">view interest check</div></router-link>
         </div>
         <div class="photowrap">
         <img src="@/assets/pk87-small.png" class="productphoto"/>
@@ -121,5 +121,9 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 </style>
