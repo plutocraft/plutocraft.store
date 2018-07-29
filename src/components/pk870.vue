@@ -12,6 +12,7 @@
 </div>
 <div class="p3">
   <div class="superheader">painstakingly engineered illumination</div>
+  <div class="brass"><img src="@/assets/pk87_3_2.png"/></div>
   <img class="p3photo" src="@/assets/pk87_3.png"/>
   <div class="p3desc">three programmable gradient diffusers<br/>per key individually addressable fast-refresh lighting<br/>more than 16m colors per point</div>
 </div>
@@ -34,6 +35,14 @@ export default {
   }
   50% {
     filter: hue-rotate(-45deg);
+  }
+}
+@keyframes shiftinv {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(45deg);
   }
 }
 .top {
@@ -174,5 +183,13 @@ export default {
 a {
   text-decoration: none;
   color: inherit;
+}
+.brass {
+  position: absolute;
+}
+.brass img {
+  height: 50vh;
+  margin-bottom: 5vh;
+  animation: shiftinv 25s infinite;
 }
 </style>
