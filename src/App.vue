@@ -24,7 +24,12 @@ body {
 @font-face {
   font-family: Circular;
   src: url("assets/lineto-circular-black.woff");
-  font-weight: bolder;
+  font-weight: bold;
+}
+@font-face {
+  font-family: Circular;
+  src: url("assets/lineto-circular-pro-book.ttf");
+  font-weight: normal;
 }
 .flex {
   display: flex;

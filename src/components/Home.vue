@@ -54,6 +54,7 @@ export default {
   font-family: Circular;
   margin-top: 15px;
   font-size: 2em;
+  font-weight: bold;
 }
 .products {
   display: flex;
@@ -84,12 +85,14 @@ export default {
   font-size: 5em;
   display: flex;
   flex-flow: column nowrap;
+  font-weight: bold;
   justify-content: space-between;
 }
 .description {
   font-size: 0.35em;
   margin-top: 10px;
   line-height: 1.4;
+  font-weight: normal;
   max-width: 300px;
 }
 .morebutton {
@@ -97,6 +100,10 @@ export default {
   border: 2px solid black;
   padding: 10px;
   border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   user-select: none;
   cursor: pointer;
   transition: all 0.3s ease;
