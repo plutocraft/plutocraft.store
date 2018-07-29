@@ -32,18 +32,18 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 5vh;
   box-sizing: border-box;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 5vh;
+  padding-left: 5vh;
   font-family: Circular;
   font-weight: bolder;
-  font-size: 2em;
+  font-size: 2.5vh;
 }
 .returnbutton {
   user-select: none;
   cursor: pointer;
-  padding: 10px;
+  padding: 1vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,9 +66,9 @@ export default {
   background-color: black;
   display: flex;
   justify-content: flex-start;
-  font-size: 2em;
+  font-size: 2.5vh;
   font-family: Circular;
-  padding: 10px;
+  padding: 1vh;
   line-height: 1.4;
 }
 .p2 {
@@ -79,40 +79,40 @@ export default {
   align-items: center;
   color: white;
   background-image: url('../assets/cross.svg');
-  background-size: 9px;
+  background-size: 1vh;
   background-color: white;
   background-blend-mode: difference;
 }
 .p2 .superheader {
   background: black;
-  padding: 5px;
+  padding: 0.5vh;
 }
 .p1photo {
-  height: 400px;
-  margin-bottom: 40px;
+  height: 40vh;
+  margin-bottom: 4vh;
   transition: filter 2s ease;
 }
 .p2photo {
-  height: 400px;
-  margin-bottom: 50px;
+  height: 40vh;
+  margin-bottom: 5vh;
   transition: filter 2s ease;
 }
 .superheader {
   font-family: Circular;
-  font-size: 5em;
-  margin-bottom: 50px;
+  font-size: 6vh;
+  margin-bottom: 5vh;
 }
 .colorbuttons {
   display: flex;
   flex-flow: row nowrap;
 }
 .colorbuttons > div {
-  width: 50px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  height: 50px;
-  border-radius: 50px;
-  margin-right: 30px;
-  border: 5px solid white;
+  width: 5vh;
+  box-shadow: 0 1vh 2vh rgba(0,0,0,0.19), 0 0.6vh 0.6vh rgba(0,0,0,0.23);
+  height: 5vh;
+  border-radius: 5vh;
+  margin-right: 3vh;
+  border: 0.5vh solid white;
   box-sizing: border-box;
   transition: all 0.1s ease;
 }
@@ -126,7 +126,7 @@ export default {
   background: #0392cf;
 }
 .colorbuttons > div:hover {
-  border: 10px solid white;
+  border: 1vh solid white;
 }
 a {
   text-decoration: none;
