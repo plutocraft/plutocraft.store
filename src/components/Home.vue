@@ -43,7 +43,12 @@ export default {
 }
 .hero {
   padding: 100px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-image: url('../assets/logo-tile.svg');
+  background-size: 4vh;
   flex-flow: column nowrap;
+  justify-content: flex-start;
 }
 .hero .wordmark {
   width: 300px;
