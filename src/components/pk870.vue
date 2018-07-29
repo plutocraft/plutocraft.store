@@ -85,8 +85,9 @@ export default {
   line-height: 1.4;
 }
 .p3desc {
-  background:  linear-gradient(0.75turn,#864af8, #e165ff);
+  background: white;
   display: flex;
+  color: black;
   justify-content: flex-start;
   font-size: 2.5vh;
   font-family: Circular;
@@ -112,8 +113,8 @@ export default {
   justify-content: center;
   align-items: center;
   color: white;
-  background-image: url('../assets/box2.svg');
-  background-size: 2vh;
+  background-image: url('../assets/pk3wall.svg');
+  background-size: 100% auto;
   animation: 25s shift infinite;
 }
 .p3photo {
@@ -125,8 +126,8 @@ export default {
   padding: 0.5vh;
 }
 .p3 .superheader {
-  background:  linear-gradient(0.25turn,#864af8, #e165ff);
-  color: white;
+  background:  white;
+  color: black;
   padding: 0.5vh;
 }
 .p1photo {
