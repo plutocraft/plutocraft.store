@@ -1,5 +1,5 @@
 <template>
-<div class="page"><div class="top"><div class="returnbutton"><router-link to="/">back</router-link></div>pk87.0</div>
+<div :class="loadedb ? 'page' : 'fixed page'" v-images-loaded="loaded"><div :class="loadedb ? 'loader' : 'hidden loader'">loading...</div><div class="top"><div class="returnbutton"><router-link to="/">back</router-link></div>pk87.0</div>
 <div class="p1">
   <div class="superheader">design without compromise</div>
   <img ref="p1photo" class="p1photo" src="@/assets/pk87.png"/>
@@ -49,11 +49,16 @@
 </div>
 </template>
 <script>
+import imagesLoaded from 'vue-images-loaded'
 export default {
   name: "pk87-0",
+  directives: {
+    imagesLoaded
+  },
   data: function() {
     return {
-      switched: true
+      switched: true,
+      loadedb: false
     }
   },
   methods: {
@@ -62,6 +67,9 @@ export default {
     },
     switcher: function() {
       this.switched = !this.switched
+    },
+    loaded: function() {
+      this.loadedb = true
     }
   }
 }
@@ -101,6 +109,25 @@ export default {
   font-weight: bolder;
   font-size: 2.5vh;
 }
+.loader {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: Circular;
+  font-size: 5vh;
+  z-index: 100000;
+  transition: 0.3s top ease;
+}
+.loader.hidden {
+  top: 0;
+}
 .returnbutton {
   user-select: none;
   cursor: pointer;
@@ -109,6 +136,11 @@ export default {
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
+}
+.page.fixed {
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
 }
 .returnbutton:hover{
   background: black;

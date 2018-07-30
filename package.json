@@ -13,6 +13,7 @@
     "animejs": "^2.2.0",
     "vue": "^2.5.2",
     "vue-animejs": "^1.0.1",
+    "vue-images-loaded": "^1.1.2",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
