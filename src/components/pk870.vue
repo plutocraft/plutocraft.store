@@ -308,7 +308,6 @@ export default {
 }
 .halfbg {
   background: #eeeeee;
-  background-image: url('../assets/cross.svg');
   background-size: 0.51vh;
   background-blend-mode: difference;
   position: absolute;
