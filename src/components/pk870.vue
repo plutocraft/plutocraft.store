@@ -3,7 +3,7 @@
 <div class="p1">
   <div class="superheader">design without compromise</div>
   <img ref="p1photo" class="p1photo" src="@/assets/pk87.png"/>
-  <div class="colorbuttons"><div class="red" @mouseover="shift('65')" @mouseout="shift('0')"></div><div class="green" @mouseover="shift('-180')" @mouseout="shift('0')"></div><div class="blue" @mouseover="shift('-50')" @mouseout="shift('0')"></div></div>
+  <div class="colorbuttons"><div class="red" @mouseover="shift('red')" @mouseout="shift('')"></div><div class="green" @mouseover="shift('green')" @mouseout="shift('')"></div><div class="blue" @mouseover="shift('blue')" @mouseout="shift('')"></div></div>
 </div>
 <div class="p2">
   <div class="superheader">premium materials</div>
@@ -84,7 +84,7 @@ export default {
   },
   methods: {
     shift: function(color) {
-      this.$refs.p1photo.style.filter=`hue-rotate(${color}deg)`
+      this.$refs.p1photo.className=`p1photo ${color}`
     },
     switcher: function() {
       this.switched = !this.switched
@@ -354,6 +354,18 @@ export default {
 .p1photo {
   height: 40vh;
   margin-bottom: 4vh;
+  transition: filter 1s ease;
+}
+.p1photo.blue {
+  filter: hue-rotate(-65deg);
+  transition: filter 0.3s ease;
+}
+.p1photo.red {
+  filter: hue-rotate(60deg);
+  transition: filter 0.3s ease;
+}
+.p1photo.green {
+  filter: hue-rotate(180deg);
   transition: filter 0.3s ease;
 }
 .p2photo {
@@ -393,7 +405,7 @@ export default {
   border-width: 1vh;
 }
 div.switch {
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
   background: white;
   border-color: black;
 }
