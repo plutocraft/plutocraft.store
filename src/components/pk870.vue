@@ -236,7 +236,7 @@ export default {
   overflow:hidden;
   align-items: center;
   flex-flow: column nowrap;
-  height:20vh;
+  height:21.3vh;
 }
 .plates2 {
   display: flex;
@@ -244,7 +244,7 @@ export default {
   overflow:hidden;
   align-items: center;
   flex-flow: column nowrap;
-  height:20vh;
+  height:18.7vh;
 }
 .lolplates {
   display: flex;
@@ -257,7 +257,7 @@ export default {
 .halfbg {
   background: white;
   position: absolute;
-  height: 46.5vh;
+  height: 47.78vh;
   width: 100vw;
   top: 0;
   right: 0;
