@@ -360,6 +360,9 @@ a {
   font-family: Circular;
   font-size: 3vh;
   max-width: 700px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
   margin-top: -3vh;
 }
 .inforows p {
