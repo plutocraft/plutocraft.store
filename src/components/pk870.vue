@@ -36,7 +36,7 @@
     <p><span class="left">slant</span><span class="right">8&deg;</span></p>
     <p><span class="left">materials</span><span class="right">aluminum, brass, acrylic</span></p>
     <p><span class="left">case colors</span><span class="right">black, white</span></p>
-    <p><span class="left">PCB</span><span class="right">per-key RGB, holtites, QMK support</span></p>
+    <p><span class="left">PCB</span><span class="right">per-key RGB, hot-swap, QMK support</span></p>
     <p><span class="left">dimensions</span><span class="right">38 cm x 14 cm x 5cm at rear</span></p>
   </div>
 </div>
