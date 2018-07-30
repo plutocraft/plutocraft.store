@@ -52,7 +52,7 @@
 	
 <div class="mc-field-group">
 	<label for="mce-EMAIL"></label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+	<input type="email" value="" placeholder="email address" name="EMAIL" class="required email" id="mce-EMAIL">
 </div>
 	<div id="mce-responses" class="clear">
 		<div class="response" id="mce-error-response" style="display:none"></div>
@@ -194,6 +194,9 @@ export default {
   font-family: Circular;
   padding: 1vh;
   line-height: 1.4;
+}
+::placeholder {
+  color: #dddddd;
 }
 .p5desc {
   display: flex;
