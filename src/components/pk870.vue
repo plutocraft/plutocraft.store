@@ -16,18 +16,28 @@
   <img class="p3photo" src="@/assets/pk87_3.png"/>
   <div class="p3desc">three programmable gradient diffusers<br/>per key individually addressable fast-refresh lighting<br/>more than 16m colors per point</div>
 </div>
-<div class="p4">
+<div :class="switched ? 'dark p4' : 'p4'">
   <div class="superheader">8&deg; slant for optimal ergonomics</div>
   <img class="p4photo" src="@/assets/slant.png"/>
+  <img class="p4black" src="@/assets/blackslant.png"/>
+  <div class="colorbuttons"><div class="switch" @click="switcher" ></div></div>
 </div>
 </div>
 </template>
 <script>
 export default {
   name: "pk87-0",
+  data: function() {
+    return {
+      switched: true
+    }
+  },
   methods: {
     shift: function(color) {
       this.$refs.p1photo.style.filter=`hue-rotate(${color}deg)`
+    },
+    switcher: function() {
+      this.switched = !this.switched
     }
   }
 }
@@ -137,7 +147,12 @@ export default {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
+  background: white;
+  transition: background-color 0.3s ease;
+}
+.dark.p4 {
+  background: black;
 }
 .p3photo {
   height: 50vh;
@@ -146,6 +161,22 @@ export default {
 .p4photo {
   height: 30vh;
   margin-bottom: 5vh;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+.p4black {
+  height: 30vh;
+  margin-bottom: 5vh;
+  margin-top: -2.3vh;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.p4.dark .p4black {
+  opacity: 1;
+}
+.p4.dark .p4photo {
+  opacity: 0;
 }
 .p2 .superheader {
   background: black;
@@ -160,6 +191,10 @@ export default {
   transform:rotate(-7.91deg);
   margin-left: -6vh;
   margin-bottom: -2vh;
+  transition: color 0.3s ease;
+}
+.dark.p4 .superheader {
+  color: white;
 }
 .p1photo {
   height: 40vh;
@@ -201,6 +236,15 @@ export default {
 }
 .colorbuttons > div:hover {
   border: 1vh solid white;
+}
+.switch {
+  transition: all 0.3s ease;
+  background: black;
+  border-color: white;
+}
+.dark.p4 .colorbuttons .switch {
+  background: white;
+  border-color: black;
 }
 a {
   text-decoration: none;
