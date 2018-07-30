@@ -427,9 +427,6 @@ a {
 .inforows p:first-child {
   border-top: none;
 }
-.inforows p:last-child {
-  border-top: none;
-}
 input {
   background: white;
   outline: none;
