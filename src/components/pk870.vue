@@ -44,6 +44,27 @@
     <p><span class="left">case colors</span><span class="right">black, white</span></p>
     <p><span class="left">PCB</span><span class="right">per-key RGB, hot-swap, QMK support</span></p>
     <p><span class="left">dimensions</span><span class="right">38 cm x 14 cm x 5cm at rear</span></p>
+    <p class="signup"><span class="left">email signup</span><span class="right"><!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="https://plutocraft.us18.list-manage.com/subscribe/post?u=374f0bcf3fefd8dcd821e9dbe&amp;id=c55f1c387e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	
+<div class="mc-field-group">
+	<label for="mce-EMAIL"></label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_374f0bcf3fefd8dcd821e9dbe_c55f1c387e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup--> 
+</span></p>
   </div>
 </div>
 </div>
@@ -406,6 +427,49 @@ a {
 .inforows p:first-child {
   border-top: none;
 }
-.inforows p .left {
+.inforows p:last-child {
+  border-top: none;
+}
+input {
+  background: white;
+  outline: none;
+  border: none;
+  color: black;
+  padding: 10px;
+  font-family: Circular;
+}
+#mc_embed_signup {
+  width: 35vh;
+}
+#mc_embed_signup_scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-flow: row nowrap;
+}
+input[type="email"] {
+  width: 100%;
+}
+form {
+  display: inline-block;
+  width: 100%;
+}
+.mc-field-group {
+  display: inline-block;
+  width: 100%;
+}
+input[type="submit"] {
+  background: black;
+  color: white;
+  border: 1px solid white;
+  border-left: none;
+  padding-top: 0.8vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+  color: black;
+  background: white;
 }
 </style>
