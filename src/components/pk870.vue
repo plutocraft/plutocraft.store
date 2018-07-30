@@ -199,7 +199,7 @@ export default {
 .p1photo {
   height: 40vh;
   margin-bottom: 4vh;
-  transition: filter 2s ease;
+  transition: filter 0.3s ease;
 }
 .p2photo {
   height: 40vh;
