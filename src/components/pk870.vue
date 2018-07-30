@@ -217,7 +217,6 @@ export default {
   background-image: url('../assets/cross.svg');
   background-size: 1vh;
   background-color: white;
-  background-blend-mode: difference;
 }
 .p3 {
   height: 95vh;
