@@ -29,9 +29,6 @@
   <div class="plates">
   <img class="p5photo" src="@/assets/plateblack.png"/>
   </div>
-  <div class="plates2">
-  <img class="p5photo" src="@/assets/platewhite.png"/>
-  </div>
   </div>
   <div class="p5desc">structurally unified design<br/>fixed ANSI layout<br/>switchtop removal</div>
 </div>
@@ -199,7 +196,7 @@ export default {
   display: flex;
   justify-content: flex-start;
   font-size: 2.5vh;
-  color: white;
+  color: black;
   z-index: 1000;
   padding: 1vh;
   font-family: Circular;
@@ -244,7 +241,7 @@ export default {
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: black;
+  background-color: #eeeeee;
   position: relative;
   background-image: url('../assets/cross.svg');
   background-size: 0.51vh;
@@ -286,18 +283,8 @@ export default {
 .plates {
   display: flex;
   justify-content: flex-start;
-  overflow:hidden;
   align-items: center;
   flex-flow: column nowrap;
-  height:21.3vh;
-}
-.plates2 {
-  display: flex;
-  justify-content: flex-end;
-  overflow:hidden;
-  align-items: center;
-  flex-flow: column nowrap;
-  height:18.7vh;
 }
 .lolplates {
   display: flex;
