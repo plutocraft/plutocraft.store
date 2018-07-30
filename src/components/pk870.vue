@@ -162,21 +162,21 @@ export default {
   height: 30vh;
   margin-bottom: 5vh;
   transition: opacity 0.3s ease;
-  opacity: 1;
+  opacity: 0;
 }
 .p4black {
   height: 30vh;
   margin-bottom: 5vh;
   margin-top: -2.3vh;
   position: absolute;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.3s ease;
 }
 .p4.dark .p4black {
-  opacity: 1;
+  opacity: 0;
 }
 .p4.dark .p4photo {
-  opacity: 0;
+  opacity: 1;
 }
 .p2 .superheader {
   background: black;
@@ -235,16 +235,16 @@ export default {
   background: #0392cf;
 }
 .colorbuttons > div:hover {
-  border: 1vh solid white;
+  border-width: 1vh;
 }
-.switch {
+div.switch {
   transition: all 0.3s ease;
-  background: black;
-  border-color: white;
-}
-.dark.p4 .colorbuttons .switch {
   background: white;
   border-color: black;
+}
+.dark.p4 .colorbuttons .switch {
+  background: black;
+  border-color: white;
 }
 a {
   text-decoration: none;
