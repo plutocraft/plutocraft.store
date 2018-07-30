@@ -23,9 +23,15 @@
   <div class="colorbuttons"><div class="switch" @click="switcher" ></div></div>
 </div>
 <div class="p5">
+  <div class="halfbg"></div>
   <div class="superheader">4.5mm integrated plate</div>
+  <div class="lolplates">
   <div class="plates">
+  <img class="p5photo" src="@/assets/plateblack.png"/>
+  </div>
+  <div class="plates2">
   <img class="p5photo" src="@/assets/platewhite.png"/>
+  </div>
   </div>
   <div class="p5desc">structurally unified design<br/>fixed ANSI layout<br/>switchtop removal</div>
 </div>
@@ -140,8 +146,8 @@ export default {
   display: flex;
   justify-content: flex-start;
   font-size: 2.5vh;
-  background: white;
-  color: black;
+  color: white;
+  z-index: 1000;
   padding: 1vh;
   font-family: Circular;
 }
@@ -186,9 +192,10 @@ export default {
   align-items: center;
   color: white;
   background-color: black;
+  position: relative;
   background-image: url('../assets/cross.svg');
-  background-size: 1vh;
-  background-blend-mode: add;
+  background-size: 0.51vh;
+  background-blend-mode: difference;
 }
 .p6 {
   height: 95vh;
@@ -200,9 +207,9 @@ export default {
   background-color: black;
 }
 .p5 .superheader {
-  background: white;
   padding: 1vh;
   color: black;
+  z-index: 1000;
 }
 .dark.p4 {
   background: black;
@@ -218,17 +225,42 @@ export default {
   opacity: 0;
 }
 .p5photo {
-  height: 40vh;
+  height:40vh;
 }
 .p5photo:not(:first-child) {
   margin-top: -15vh;
 }
 .plates {
   display: flex;
+  justify-content: flex-start;
+  overflow:hidden;
+  align-items: center;
+  flex-flow: column nowrap;
+  height:20vh;
+}
+.plates2 {
+  display: flex;
+  justify-content: flex-end;
+  overflow:hidden;
+  align-items: center;
+  flex-flow: column nowrap;
+  height:20vh;
+}
+.lolplates {
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row nowrap;
+  z-index: 1000;
+  flex-flow: column nowrap;
   margin-bottom: 5vh;
+}
+.halfbg {
+  background: white;
+  position: absolute;
+  height: 46.5vh;
+  width: 100vw;
+  top: 0;
+  right: 0;
 }
 .p4black {
   height: 30vh;
