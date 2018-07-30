@@ -13,7 +13,7 @@ export default {
 <style>
 body {
   margin: 0;
-  background: black;
+  background: white;
   box-sizing: border-box;
 }
 #app {

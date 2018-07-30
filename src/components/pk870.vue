@@ -1,5 +1,5 @@
 <template>
-<div class="page"><div class="top"><div class="returnbutton"><router-link to="/">&#129052; back</router-link></div>pk87.0</div>
+<div class="page"><div class="top"><div class="returnbutton"><router-link to="/">back</router-link></div>pk87.0</div>
 <div class="p1">
   <div class="superheader">design without compromise</div>
   <img ref="p1photo" class="p1photo" src="@/assets/pk87.png"/>
@@ -21,6 +21,24 @@
   <img class="p4photo" src="@/assets/slant.png"/>
   <img class="p4black" src="@/assets/blackslant.png"/>
   <div class="colorbuttons"><div class="switch" @click="switcher" ></div></div>
+</div>
+<div class="p5">
+  <div class="superheader">4.5mm integrated plate</div>
+  <div class="plates">
+  <img class="p5photo" src="@/assets/platewhite.png"/>
+  </div>
+  <div class="p5desc">structurally unified design<br/>fixed ANSI layout<br/>switchtop removal</div>
+</div>
+<div class="p6">
+  <div class="superheader">specifications</div>
+  <div class="inforows">
+    <p><span class="left">layout</span><span class="right">87-key ANSI tenkeyless</span></p>
+    <p><span class="left">slant</span><span class="right">8&deg;</span></p>
+    <p><span class="left">materials</span><span class="right">aluminum, brass, acrylic</span></p>
+    <p><span class="left">case colors</span><span class="right">black, white</span></p>
+    <p><span class="left">PCB</span><span class="right">per-key RGB, holtites, QMK support</span></p>
+    <p><span class="left">dimensions</span><span class="right">38 cm x 14 cm x 5cm at rear</span></p>
+  </div>
 </div>
 </div>
 </template>
@@ -118,6 +136,15 @@ export default {
   padding: 1vh;
   line-height: 1.4;
 }
+.p5desc {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2.5vh;
+  background: white;
+  color: black;
+  padding: 1vh;
+  font-family: Circular;
+}
 .p2 {
   height: 95vh;
   display: flex;
@@ -151,6 +178,32 @@ export default {
   background: white;
   transition: background-color 0.3s ease;
 }
+.p5 {
+  height: 95vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  background-image: url('../assets/cross.svg');
+  background-size: 1vh;
+  background-blend-mode: add;
+}
+.p6 {
+  height: 95vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+}
+.p5 .superheader {
+  background: white;
+  padding: 1vh;
+  color: black;
+}
 .dark.p4 {
   background: black;
 }
@@ -163,6 +216,19 @@ export default {
   margin-bottom: 5vh;
   transition: opacity 0.3s ease;
   opacity: 0;
+}
+.p5photo {
+  height: 40vh;
+}
+.p5photo:not(:first-child) {
+  margin-top: -15vh;
+}
+.plates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  margin-bottom: 5vh;
 }
 .p4black {
   height: 30vh;
@@ -217,7 +283,7 @@ export default {
 }
 .colorbuttons > div {
   width: 5vh;
-  box-shadow: 0 1vh 2vh rgba(0,0,0,0.19), 0 0.6vh 0.6vh rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   height: 5vh;
   border-radius: 5vh;
   margin-right: 3vh;
@@ -256,5 +322,23 @@ a {
   position: absolute;
   margin-top: -2vh;
   animation: shiftinv 60s infinite;
+}
+.inforows {
+  width: 100vw;
+  font-family: Circular;
+  font-size: 3vh;
+  max-width: 700px;
+  margin-top: -3vh;
+}
+.inforows p {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid white;
+  padding-top: 2.7vh;
+}
+.inforows p:first-child {
+  border-top: none;
+}
+.inforows p .left {
 }
 </style>
