@@ -1,5 +1,5 @@
 <template>
-<div class="page"><div class="top"><div class="returnbutton"><router-link to="/">🠜 back</router-link></div>pk87.0</div>
+<div class="page"><div class="top"><div class="returnbutton"><router-link to="/">&#129052; back</router-link></div>pk87.0</div>
 <div class="p1">
   <div class="superheader">design without compromise</div>
   <img ref="p1photo" class="p1photo" src="@/assets/pk87.png"/>
@@ -18,7 +18,7 @@
 </div>
 <div class="p4">
   <div class="superheader">8&deg; slant for optimal ergonomics</div>
-  <img class="p3photo" src="@/assets/slant.png"/>
+  <img class="p4photo" src="@/assets/slant.png"/>
 </div>
 </div>
 </template>
@@ -143,6 +143,10 @@ export default {
   height: 50vh;
   margin-bottom: 5vh;
 }
+.p4photo {
+  height: 30vh;
+  margin-bottom: 5vh;
+}
 .p2 .superheader {
   background: black;
   padding: 0.5vh;
@@ -151,6 +155,11 @@ export default {
   background:  white;
   color: black;
   padding: 0.5vh;
+}
+.p4 .superheader {
+  transform:rotate(-7.91deg);
+  margin-left: -6vh;
+  margin-bottom: -2vh;
 }
 .p1photo {
   height: 40vh;
