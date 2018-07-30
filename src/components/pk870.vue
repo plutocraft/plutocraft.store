@@ -41,7 +41,11 @@
     <p><span class="left">case colors</span><span class="right">black, white</span></p>
     <p><span class="left">PCB</span><span class="right">per-key RGB, hot-swap, QMK support</span></p>
     <p><span class="left">dimensions</span><span class="right">38 cm x 14 cm x 5cm at rear</span></p>
-    <p class="signup"><span class="left">email signup</span><span class="right"><!-- Begin MailChimp Signup Form -->
+  </div>
+</div>
+<div class="p7">
+  <div class="superheader">sign up to hear more about pk87.0 and future plutocraft projects</div>
+  <p class="signup"><span class="right"><!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup">
 <form action="https://plutocraft.us18.list-manage.com/subscribe/post?u=374f0bcf3fefd8dcd821e9dbe&amp;id=c55f1c387e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
@@ -62,7 +66,6 @@
 
 <!--End mc_embed_signup--> 
 </span></p>
-  </div>
 </div>
 </div>
 </template>
@@ -256,6 +259,19 @@ export default {
   color: white;
   background-color: black;
 }
+.p7 {
+  height: 40vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: white;
+}
+.p7 .superheader {
+  font-size: 3vh;
+  margin-bottom: 1vh;
+}
 .p5 .superheader {
   padding: 1vh;
   color: black;
@@ -355,7 +371,7 @@ export default {
 }
 .colorbuttons > div {
   width: 5vh;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 0.3vh 0.6vh rgba(0,0,0,0.16), 0 0.3vh 0.6vh rgba(0,0,0,0.23);
   height: 5vh;
   border-radius: 5vh;
   margin-right: 3vh;
@@ -399,27 +415,34 @@ a {
   width: 100vw;
   font-family: Circular;
   font-size: 3vh;
-  max-width: 700px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 70vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
   box-sizing: border-box;
   margin-top: -3vh;
 }
 .inforows p {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid white;
+  border-top: 0.1vh solid white;
   padding-top: 2.7vh;
+}
+.signup {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.1vh solid white;
+  padding-top: 2.7vh;
+  font-family: Circular;
 }
 .inforows p:first-child {
   border-top: none;
 }
 input {
-  background: white;
+  background: black;
   outline: none;
   border: none;
-  color: black;
-  padding: 10px;
+  color: white;
+  padding: 1vh;
   font-family: Circular;
 }
 #mc_embed_signup {
@@ -434,6 +457,10 @@ input {
 }
 input[type="email"] {
   width: 100%;
+  border: 0.1vh solid black;
+  border-right: none;
+  border-left: none;
+  box-sizing: border-box;
 }
 form {
   display: inline-block;
@@ -444,16 +471,16 @@ form {
   width: 100%;
 }
 input[type="submit"] {
-  background: black;
-  color: white;
-  border: 1px solid white;
+  background: white;
+  color: black;
+  border: 0.1vh solid black;
   border-left: none;
-  padding-top: 0.8vh;
+  padding-top: 1vh;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 input[type="submit"]:hover {
-  color: black;
-  background: white;
+  color: white;
+  background: black;
 }
 </style>
