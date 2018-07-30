@@ -46,6 +46,7 @@ export default {
   box-sizing: border-box;
   min-height: 100vh;
   background-size: 4vh;
+  background: black;
   flex-flow: column nowrap;
   justify-content: flex-start;
 }
