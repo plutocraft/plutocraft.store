@@ -1,6 +1,6 @@
 <template>
   <div class="flex center hero">
-    <img @click="home" class="wordmark" src="@/assets/logo-dark.svg"/>
+    <img @click="home" class="wordmark" src="@/assets/logo.svg"/>
     <div class="title">(store)</div>
     <div class="products">
       <div class="product">
@@ -46,7 +46,7 @@ export default {
   box-sizing: border-box;
   min-height: 100vh;
   background-size: 4vh;
-  background: black;
+  color: black;
   flex-flow: column nowrap;
   justify-content: flex-start;
 }
@@ -78,15 +78,17 @@ export default {
   flex-flow: row wrap;
   box-sizing: border-box;
   justify-content: space-between;
-  align-items: space-between;
+  align-items: center;
   border-radius: 10px;
   position: relative;
   padding: 40px;
   background: white;
+  position: relative;
 }
 .product .name {
   font-family: Circular;
   font-size: 5em;
+  margin-top: -23px;
   display: flex;
   flex-flow: column nowrap;
   font-weight: bold;
@@ -94,9 +96,9 @@ export default {
 }
 .description {
   font-size: 0.35em;
-  margin-top: 10px;
   line-height: 1.4;
   font-weight: normal;
+  margin-bottom: 40px;
   max-width: 300px;
 }
 .morebutton {
@@ -117,9 +119,9 @@ export default {
   background: black;
 }
 .productphoto {
-  height: 160px;
+  height: 100%;
   animation: shift 25s infinite;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 .photowrap {
   display: flex;
