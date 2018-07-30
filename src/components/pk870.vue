@@ -244,11 +244,7 @@ export default {
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: #eeeeee;
   position: relative;
-  background-image: url('../assets/cross.svg');
-  background-size: 0.51vh;
-  background-blend-mode: difference;
 }
 .p6 {
   height: 95vh;
@@ -311,7 +307,10 @@ export default {
   margin-bottom: 5vh;
 }
 .halfbg {
-  background: white;
+  background: #eeeeee;
+  background-image: url('../assets/cross.svg');
+  background-size: 0.51vh;
+  background-blend-mode: difference;
   position: absolute;
   height: 47.78vh;
   width: 100vw;
