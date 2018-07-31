@@ -112,6 +112,82 @@ export default {
     filter: hue-rotate(360deg);
   }
 }
+@media screen and (orientation: portrait) {
+ .p1photo {
+   width: 85vw;
+   height: auto!important;
+ }
+ .p1 .superheader {
+   font-size: 6vw;
+ }
+ .p2photo {
+   width: 85vw;
+   height: auto!important;
+ }
+ .p2 .superheader {
+   font-size: 8vw;
+ }
+ .p2desc {
+   font-size: 4vw!important;
+   max-width: 80vw;
+   line-height: 1.8!important;
+ }
+ .p3photo {
+   width: 85vw;
+   height: auto!important;
+ }
+ .brass {
+   width: 85vw;
+   height: auto!important;
+   margin-top: -11.9vw!important;
+ }
+ .p3 .superheader {
+   font-size: 5vw;
+   padding: 1vw;
+ }
+ .p3 {
+   background-size: auto 100%!important;
+ }
+ .p3desc {
+   font-size: 4vw!important;
+   max-width: 80vw;
+   line-height: 1.8!important;
+ }
+ .p4photo {
+   width: 85vw;
+   height: auto!important;
+ }
+ .p4black {
+   width: 85vw;
+   height: auto!important;
+   margin-top: -4vh!important;
+ }
+ .p4 .superheader {
+   font-size: 5.6vw;
+   margin-left: -6vw!important;
+ }
+ .p5photo {
+   width: 85vw;
+   height: auto!important;
+ }
+ .halfbg {
+   height: 43.3vh!important;
+ }
+ .p5 .superheader {
+   font-size: 7vw;
+ }
+ .p5desc {
+   font-size: 5vw!important;
+   max-width: 80vw;
+   line-height: 1.8!important;
+ }
+ .inforows {
+   font-size: 4vw!important;
+ }
+ .p7 .superheader {
+   font-size: 3vw!important;
+ }
+}
 .top {
   position: fixed;
   top: 0;
