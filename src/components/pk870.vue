@@ -531,6 +531,8 @@ input {
   border: none;
   color: white;
   padding: 1vh;
+  border-radius: 0!important;
+  background-image: none!important;
   font-family: Circular;
 }
 #mc_embed_signup {
