@@ -41,8 +41,38 @@ export default {
     filter: hue-rotate(360deg);
   }
 }
+@media screen and (orientation: portrait) {
+  .product {
+    flex-flow: column-reverse nowrap!important;
+    border: 2px solid black;
+    padding: 30px!important;
+  }
+  .productphoto {
+    height: auto!important;
+    width: 100%;
+    margin-left: 0!important;
+    margin-bottom: 30px;
+  }
+  .name {
+    font-size: 40px!important;
+  }
+  .description {
+    font-size: 20px!important;
+    margin-bottom: 20px!important;
+  }
+  .name span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-flow: column nowrap;
+  }
+  .morebutton {
+    font-size: 17px!important;
+  }
+}
 .hero {
-  padding: 100px;
+  padding-top: 100px;
   box-sizing: border-box;
   min-height: 100vh;
   background-size: 4vh;
