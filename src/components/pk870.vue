@@ -533,6 +533,8 @@ input {
   padding: 1vh;
   border-radius: 0!important;
   background-image: none!important;
+  appearance: none;
+  -webkit-appearance: none;
   font-family: Circular;
 }
 #mc_embed_signup {
