@@ -2,13 +2,13 @@
 <div :class="loadedb ? 'page' : 'fixed page'" v-images-loaded="loaded"><div :class="loadedb ? 'loader' : 'hidden loader'">loading...</div><div class="top"><div class="returnbutton"><router-link to="/">back</router-link></div>pkc.melt</div>
 <div class="p1">
     <div class="photos"><img class="mainphoto" src="@/assets/melt3.png"/><img class="mainphoto" src="@/assets/melt4.png"/><img class="mainphoto" src="@/assets/melt7.png"/></div>
-    <div class="info"><div class="infobody"><div class="infoheader">pkc.melt</div>
+    <div class="info"><div class="infobody"><div class="infoheader">pkc.melt</div><div class="scrollbody"><div class="scrollcontents">
 <p>each and every unit produced is unique</p>
 <p>this product is designed in an advanced virtual fluid simulation workspace, then each cap is manufactured as a one-off using selective laser sintering technology</p>
 <p>SLS, a cutting-edge manufacturing technique, uses a plastic powder that is melted together by a precise high-energy laser beam to produce smooth, accurate, and detailed results</p>
 <p>pkc.melt is compatible with MX-style cruciform stems but if sufficient interest is shown we may consider producing variations compatible with Alps or Topre switches</p>
 <p><strong>please note:</strong> the colors shown may not be entirely accurate to real life. due to the nature of the SLS process, only certain colors of plastic powder are available and at this time it is impractical to produce stock entirely for the purpose of a short-run hobbyist product. this also means no color-matching is possible with Pantone, etc. swatches or other existing plastics products. however, upon request it may be possible to provide precise pantone swatches for those fixed colors that are in fact available.</p>
-</div><div class="controls"><div class="price">$45</div><span><Select placeholder="select a melt color" suffix="melt"></Select><Select placeholder="select a base color" suffix="base"></Select><div class="buybutton">buy now</div></span></div></div>
+</div></div></div><div class="controls"><div class="price">$45</div><span><Select placeholder="select a melt color" suffix="melt"></Select><Select placeholder="select a base color" suffix="base"></Select><div class="buybutton">buy now</div></span></div></div>
 </div>
 </div>
 </template>
@@ -47,6 +47,21 @@ export default {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.scrollbody {
+  height: calc(100% - 80px);
+  overflow-y: auto;
+  margin-top: -1em;
+  padding-right: 1em;
+}
+.scrollbody::-webkit-scrollbar {
+  width: 0.25em;
+}
+.scrollbody::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+.scrollcontents {
+  margin-bottom: 1.5em;
+}
 .mainphoto {
   max-height: 30%;
 }
@@ -59,6 +74,7 @@ export default {
   padding: 50px;
   margin-left: 50px;
   box-sizing: border-box;
+  padding-bottom: 129px;
 }
 .infoheader {
   font-size: 4em;
@@ -66,6 +82,7 @@ export default {
 }
 .infobody {
   font-size: 1.2em;
+  height: 100%;
   line-height: 1.4;
 }
 .photos {
@@ -73,6 +90,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 230px;
   flex-flow: column nowrap;
 }
 .p1 {
@@ -167,6 +185,7 @@ a {
   bottom: 0;
   right: 0;
   position: absolute;
+  background: black;
 }
 .controls span {
   display: flex;
