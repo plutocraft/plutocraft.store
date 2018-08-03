@@ -39,7 +39,7 @@ export default {
 .page {
   height: 100vh;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
   position: relative;
@@ -48,21 +48,15 @@ export default {
   padding-bottom: 100px;
 }
 .mainphoto {
-  max-height: 204px;
-}
-.mainphoto:not(:first-child) {
-  margin-top: 25px;
+  max-height: 30%;
 }
 .info {
   background: black;
   font-family: Circular;
   flex-grow: 1;
   height: 100%;
+  position: relative;
   padding: 50px;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
   margin-left: 50px;
   box-sizing: border-box;
 }
@@ -74,8 +68,16 @@ export default {
   font-size: 1.2em;
   line-height: 1.4;
 }
+.photos {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column nowrap;
+}
 .p1 {
   height: 100%;
+  max-height: 800px;
   box-sizing: border-box;
   width: 100vw;
   max-width: 1100px;
@@ -86,6 +88,8 @@ export default {
   align-items: flex-start;
   margin-left: 20px;
   padding: 50px;
+  overflow: hidden;
+  position: relative;
 }
 .top {
   position: fixed;
@@ -147,13 +151,22 @@ a {
   color: inherit;
 }
 .controls {
+  padding: 50px;
+  padding-right: 0;
+  padding-left: 0;
   padding-top: 25px;
   border-top: 2px solid white;
-  width: 100%;
+  box-sizing: border-box;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: calc(100% - 100px);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  bottom: 0;
+  right: 0;
+  position: absolute;
 }
 .controls span {
   display: flex;
