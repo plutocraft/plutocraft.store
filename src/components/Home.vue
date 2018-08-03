@@ -5,11 +5,23 @@
     <div class="products">
       <div class="product">
         <div class="name">
+          <span>pkc.melt
+            <div class="description">procedurally modelled artisan keycap
+            </div>
+          </span>
+        <router-link to="/pkc.melt"><div class="morebutton">store page</div></router-link>
+        </div>
+        <div class="photowrap">
+        <img src="@/assets/melt3_lowres.png" class="productphoto"/>
+        </div>
+      </div>
+      <div class="product">
+        <div class="name">
           <span>pk87.0
             <div class="description">custom TKL
             </div>
           </span>
-        <router-link to="/pk87.0"><div class="morebutton">view interest check</div></router-link>
+        <router-link to="/pk87.0"><div class="morebutton">interest check</div></router-link>
         </div>
         <div class="photowrap">
         <img src="@/assets/pk87-small.png" class="productphoto"/>
@@ -43,22 +55,23 @@ export default {
 }
 @media screen and (orientation: portrait) {
   .product {
-    flex-flow: column-reverse nowrap!important;
+    flex-flow: column-reverse nowrap !important;
     border: 2px solid black;
-    padding: 30px!important;
+    padding: 30px !important;
+    margin-bottom: 30px;
   }
   .productphoto {
-    height: auto!important;
-    width: 100%;
-    margin-left: 0!important;
+    height: auto !important;
+    width: 100% !important;
+    margin-left: 0 !important;
     margin-bottom: 30px;
   }
   .name {
-    font-size: 40px!important;
+    font-size: 40px !important;
   }
   .description {
-    font-size: 20px!important;
-    margin-bottom: 20px!important;
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
   }
   .name span {
     display: flex;
@@ -68,7 +81,7 @@ export default {
     flex-flow: column nowrap;
   }
   .morebutton {
-    font-size: 17px!important;
+    font-size: 17px !important;
   }
 }
 .hero {
@@ -103,21 +116,21 @@ export default {
 }
 .product {
   width: 100%;
-  min-height: 300px;
   display: flex;
   flex-flow: row wrap;
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
-  border-radius: 10px;
   position: relative;
-  padding: 40px;
+  padding: 46px;
   background: white;
   position: relative;
 }
 .product .name {
   font-family: Circular;
   font-size: 5em;
+  width: 250px;
+  max-width: 50vw;
   margin-top: -23px;
   display: flex;
   flex-flow: column nowrap;
@@ -129,13 +142,12 @@ export default {
   line-height: 1.4;
   font-weight: normal;
   margin-bottom: 40px;
-  max-width: 300px;
+  max-width: 250px;
 }
 .morebutton {
   font-size: 0.3em;
   border: 2px solid black;
   padding: 10px;
-  border-radius: 5px;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -150,11 +162,16 @@ export default {
 }
 .productphoto {
   height: 100%;
-  animation: shift 25s infinite;
   margin-left: 40px;
+}
+.product:nth-child(2) .productphoto {
+  animation: shift 25s infinite;
+  height: auto !important;
+  width: 400px;
 }
 .photowrap {
   display: flex;
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
 }

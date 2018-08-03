@@ -70,7 +70,7 @@
 </div>
 </template>
 <script>
-import imagesLoaded from 'vue-images-loaded'
+import imagesLoaded from "vue-images-loaded";
 export default {
   name: "pk87-0",
   directives: {
@@ -80,20 +80,20 @@ export default {
     return {
       switched: true,
       loadedb: false
-    }
+    };
   },
   methods: {
     shift: function(color) {
-      this.$refs.p1photo.className=`p1photo ${color}`
+      this.$refs.p1photo.className = `p1photo ${color}`;
     },
     switcher: function() {
-      this.switched = !this.switched
+      this.switched = !this.switched;
     },
     loaded: function() {
-      this.loadedb = true
+      this.loadedb = true;
     }
   }
-}
+};
 </script>
 <style scoped>
 @keyframes shift {
@@ -113,80 +113,80 @@ export default {
   }
 }
 @media screen and (orientation: portrait) {
- .p1photo {
-   width: 85vw;
-   height: auto!important;
- }
- .p1 .superheader {
-   font-size: 6vw;
- }
- .p2photo {
-   width: 85vw;
-   height: auto!important;
- }
- .p2 .superheader {
-   font-size: 8vw;
- }
- .p2desc {
-   font-size: 4vw!important;
-   max-width: 80vw;
-   line-height: 1.8!important;
- }
- .p3photo {
-   width: 85vw;
-   height: auto!important;
- }
- .brass {
-   width: 85vw;
-   height: auto!important;
-   margin-top: -11.9vw!important;
- }
- .p3 .superheader {
-   font-size: 5vw;
-   padding: 1vw;
- }
- .p3 {
-   background-size: auto 100%!important;
- }
- .p3desc {
-   font-size: 4vw!important;
-   max-width: 80vw;
-   line-height: 1.8!important;
- }
- .p4photo {
-   width: 85vw;
-   height: auto!important;
- }
- .p4black {
-   width: 85vw;
-   height: auto!important;
-   margin-top: -4vh!important;
- }
- .p4 .superheader {
-   font-size: 5.6vw;
-   margin-left: -6vw!important;
- }
- .p5photo {
-   width: 85vw;
-   height: auto!important;
- }
- .halfbg {
-   height: 43.3vh!important;
- }
- .p5 .superheader {
-   font-size: 7vw;
- }
- .p5desc {
-   font-size: 5vw!important;
-   max-width: 80vw;
-   line-height: 1.8!important;
- }
- .inforows {
-   font-size: 4vw!important;
- }
- .p7 .superheader {
-   font-size: 3vw!important;
- }
+  .p1photo {
+    width: 85vw;
+    height: auto !important;
+  }
+  .p1 .superheader {
+    font-size: 6vw;
+  }
+  .p2photo {
+    width: 85vw;
+    height: auto !important;
+  }
+  .p2 .superheader {
+    font-size: 8vw;
+  }
+  .p2desc {
+    font-size: 4vw !important;
+    max-width: 80vw;
+    line-height: 1.8 !important;
+  }
+  .p3photo {
+    width: 85vw;
+    height: auto !important;
+  }
+  .brass {
+    width: 85vw;
+    height: auto !important;
+    margin-top: -11.9vw !important;
+  }
+  .p3 .superheader {
+    font-size: 5vw;
+    padding: 1vw;
+  }
+  .p3 {
+    background-size: auto 100% !important;
+  }
+  .p3desc {
+    font-size: 4vw !important;
+    max-width: 80vw;
+    line-height: 1.8 !important;
+  }
+  .p4photo {
+    width: 85vw;
+    height: auto !important;
+  }
+  .p4black {
+    width: 85vw;
+    height: auto !important;
+    margin-top: -4vh !important;
+  }
+  .p4 .superheader {
+    font-size: 5.6vw;
+    margin-left: -6vw !important;
+  }
+  .p5photo {
+    width: 85vw;
+    height: auto !important;
+  }
+  .halfbg {
+    height: 43.3vh !important;
+  }
+  .p5 .superheader {
+    font-size: 7vw;
+  }
+  .p5desc {
+    font-size: 5vw !important;
+    max-width: 80vw;
+    line-height: 1.8 !important;
+  }
+  .inforows {
+    font-size: 4vw !important;
+  }
+  .p7 .superheader {
+    font-size: 3vw !important;
+  }
 }
 .top {
   position: fixed;
@@ -239,7 +239,7 @@ export default {
   height: 100vh;
   position: fixed;
 }
-.returnbutton:hover{
+.returnbutton:hover {
   background: black;
   color: white;
 }
@@ -290,7 +290,7 @@ export default {
   justify-content: center;
   align-items: center;
   color: white;
-  background-image: url('../assets/cross.svg');
+  background-image: url("../assets/cross.svg");
   background-size: 1vh;
   background-color: white;
 }
@@ -301,7 +301,7 @@ export default {
   justify-content: center;
   align-items: center;
   color: white;
-  background-image: url('../assets/pk3wall.svg');
+  background-image: url("../assets/pk3wall.svg");
   background-size: 100% auto;
   animation: 60s shift infinite;
 }
@@ -365,7 +365,7 @@ export default {
   opacity: 0;
 }
 .p5photo {
-  height:40vh;
+  height: 40vh;
 }
 .p5photo:not(:first-child) {
   margin-top: -15vh;
@@ -413,12 +413,12 @@ export default {
   padding: 0.5vh;
 }
 .p3 .superheader {
-  background:  white;
+  background: white;
   color: black;
   padding: 0.5vh;
 }
 .p4 .superheader {
-  transform:rotate(-7.91deg);
+  transform: rotate(-7.91deg);
   margin-left: -6vh;
   margin-bottom: -2vh;
   transition: color 0.3s ease;
@@ -459,7 +459,8 @@ export default {
 }
 .colorbuttons > div {
   width: 5vh;
-  box-shadow: 0 0.3vh 0.6vh rgba(0,0,0,0.16), 0 0.3vh 0.6vh rgba(0,0,0,0.23);
+  box-shadow: 0 0.3vh 0.6vh rgba(0, 0, 0, 0.16),
+    0 0.3vh 0.6vh rgba(0, 0, 0, 0.23);
   height: 5vh;
   border-radius: 5vh;
   margin-right: 3vh;
@@ -531,8 +532,8 @@ input {
   border: none;
   color: white;
   padding: 1vh;
-  border-radius: 0!important;
-  background-image: none!important;
+  border-radius: 0 !important;
+  background-image: none !important;
   appearance: none;
   -webkit-appearance: none;
   font-family: Circular;
