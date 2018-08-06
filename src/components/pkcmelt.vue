@@ -54,7 +54,7 @@ export default {
   padding-right: 1em;
 }
 .scrollbody::-webkit-scrollbar {
-  width: 0.25em;
+  width: 2px;
 }
 .scrollbody::-webkit-scrollbar-thumb {
   background-color: white;
