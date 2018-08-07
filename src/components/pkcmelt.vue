@@ -10,6 +10,7 @@
 <p><strong>please note:</strong> the colors shown may not be entirely accurate to real life. due to the nature of the SLS process, only certain colors of plastic powder are available and at this time it is impractical to produce stock entirely for the purpose of a short-run hobbyist product. this also means no color-matching is possible with Pantone, etc. swatches or other existing plastics products. however, upon request it may be possible to provide precise pantone swatches for those fixed colors that are in fact available.</p>
 </div></div></div><div class="controls"><div class="price">$45</div><span><Select placeholder="select a melt color" suffix="melt"></Select><Select placeholder="select a base color" suffix="base"></Select><div class="buybutton">buy now</div></span></div></div>
 </div>
+<div class="mobilecontrols"><div class="price">$45</div><span><Select placeholder="melt color" suffix="melt"></Select><Select placeholder="base color" suffix="base"></Select><div class="buybutton">buy now</div></span></div>
 </div>
 </template>
 <script>
@@ -212,5 +213,86 @@ a {
 }
 .selectbox {
   margin-right: 15px;
+}
+.mobilecontrols {
+  display: none;
+}
+@media screen and (max-width: 1020px) {
+  .p1 {
+    flex-flow: column nowrap;
+  }
+  .photos {
+    flex-flow: row nowrap;
+  }
+  .mainphoto {
+    max-height: none;
+    max-width: 30%;
+  }
+  .info {
+    height: auto;
+    padding-bottom: 50px;
+    margin: 0;
+    margin-bottom: 80px;
+  }
+  .p1 {
+    padding: 0;
+    margin: 0;
+    display: block;
+    overflow: visible;
+  }
+  .photos {
+    height: auto;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+  .page {
+    display: block;
+  }
+  .controls {
+    display: none;
+  }
+  .mobilecontrols {
+    display: flex;
+    position: fixed;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: white;
+    font-family: Circular;
+    color: black;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .selectbox {
+    background: white !important;
+    width: auto !important;
+    padding: 0 !important;
+    font-size: 1.1em !important;
+    margin-right: 2px;
+  }
+  .mobilecontrols span {
+    min-width: 70%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .buybutton {
+    border-color: black;
+    padding: 10px;
+    font-size: 1.1em;
+    margin-left: 2.5px;
+  }
+  .price {
+    font-size: 2.2em;
+  }
 }
 </style>
