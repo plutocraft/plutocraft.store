@@ -294,5 +294,9 @@ a {
   .price {
     font-size: 2.2em;
   }
+  .buybutton:hover {
+    color: white;
+    background: black;
+  }
 }
 </style>
