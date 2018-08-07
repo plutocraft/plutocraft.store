@@ -298,5 +298,9 @@ a {
     color: white;
     background: black;
   }
+  .active.selectbox .options {
+    height: 288px !important;
+    margin-bottom: -8px !important;
+  }
 }
 </style>
