@@ -44,8 +44,6 @@ export default {
   flex-flow: column nowrap;
   position: relative;
   box-sizing: border-box;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 .scrollbody {
   height: calc(100% - 80px);
