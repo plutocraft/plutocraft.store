@@ -3,7 +3,7 @@
     <img @click="home" class="wordmark" src="@/assets/logo.svg"/>
     <div class="title">(store)</div>
     <div class="products">
-      <div class="product">
+      <!--<div class="product">
         <div class="name">
           <span>pkc.melt
             <div class="description">procedurally modelled artisan keycap
@@ -14,7 +14,7 @@
         <div class="photowrap">
         <img src="@/assets/melt3_lowres.png" class="productphoto"/>
         </div>
-      </div>
+      </div>-->
       <div class="product">
         <div class="name">
           <span>pk87.0
@@ -164,7 +164,7 @@ export default {
   height: 100%;
   margin-left: 40px;
 }
-.product:nth-child(2) .productphoto {
+.product .productphoto {
   animation: shift 25s infinite;
   height: auto !important;
   width: 400px;
